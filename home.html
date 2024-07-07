@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="music.js"></script>
+    
+    <title>Click Shop Online</title>
+</head>
+<body>
+    <audio autoplay display="none">
+        <source src="click 4.wav" type="audio/wav">
+    </audio>
+<div class="second">
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo"><img src="click shop.png" alt="" height="80px" width="200px"></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="carting.html">Cart</a></li>
+        </ul>
+        <a href="carting.html" class="view-cart"><i class="fa fa-shopping-basket fa-shake" aria-hidden="true"></i><span id="cart-count">(0)</span></a>
+        <script src="menu.js"></script>
+    </nav>
+    <div class="home">
+        <div class="welcome-home">
+            <h1>Welcome to Shopping!</h1>
+            <b><p>Discover amazing products at unbeatable prices!</p></b>
+            <button onclick="location.href='products.html'"><i class="fa-solid fa-shop"></i> &nbsp; Shop Now</button>
+        </div>  
+        <ul>
+            <li>Free Delivery on all products.</li>
+            <li>Low Price & Best Quality.</li>
+            <li>Easy Retun & Exchange</li>
+            <li>Fast Delivery 2-3 days.</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <marquee behavior="alternate" direction="left">
+        <h3>&copy; 2024 Click Shop Online.All rights reserved.</h3>
+    </marquee>
+    <div class="social">
+        <a href="tel:9629314051" onclick="playMusic3()"><i class="fa-solid fa-phone fa-shake"></i> Call Us</a>
+        <a href="mailto:akrogith777@gamil.com" onclick="playMusic3()"><i class="fa-solid fa-envelope fa-shake"></i> Mail Us</a>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

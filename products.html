@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="music.js"></script>
+    <title>Click Shop Online</title>
+</head>
+<body>
+    <audio autoplay display="none">
+        <source src="click 4.wav" type="audio/wav">
+    </audio>
+    <div class="fourth">
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo"><img src="click shop.png" alt="" height="80px" width="200px"></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="carting.html">Cart</a></li>
+            </ul>
+            <a href="carting.html" class="view-cart"><i class="fa fa-shopping-basket fa-shake" aria-hidden="true"></i><span id="cart-count">(0)</span></a>
+            <script src="menu.js"></script>
+        </nav>
+        <main>
+            <section class="products">
+
+                <div class="product">
+                    <img src="/products/tshirt.webp" alt="Product 1">
+                    <h2>Basic T-shirt</h2>
+                    <p>Price: $15.00 <del>$25.00</del> </p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A comfortable, everyday t-shirt made from 100% cotton.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="1" data-product-name="Basic T-Shirt" data-product-price="15.00" data-product-image="/products/tshirt.webp"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/casual shirt.jpg" alt="Product 2">
+                    <h2>Casual Shirt</h2>
+                    <p>Price: $25.00 <del>$35.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                            <p>A versatile shirt perfect for casual outings and relaxed occasions.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="2" data-product-name="Casual Shirt" data-product-price="25.00" data-product-image="/products/casual shirt.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="products/formla shirt.jpg" alt="Product 3">
+                    <h2>Formal Shirt</h2>
+                    <p>Price: $35.00 <del>$45.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A stylish formal shirt suitable for office wear and special events.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="3" data-product-name="Formal Shirt" data-product-price="35.00" data-product-image="products/formla shirt.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="products/jeans.jpg" alt="Product 4">
+                    <h2>Jeans</h2>
+                    <p>Price: $40.00 <del>$55.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Classic jeans with a modern fit and durable fabric.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="4" data-product-name="Jeans" data-product-price="40.00" data-product-image="products/jeans.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="products/chinos.jpg" alt="Product 5">
+                    <h2>Chinos</h2>
+                    <p>Price: $30.00 <del>$45.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Comfortable chinos ideal for both casual and semi-formal settings.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="5" data-product-name="Chinos" data-product-price="30.00" data-product-image="products/chinos.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/hoodie.jpg" alt="Product 6">
+                    <h2>Hoodie</h2>
+                    <p>Price: $50.00 <del>$65.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A cozy hoodie with a soft fleece lining for ultimate comfort.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="6" data-product-name="Hoodie" data-product-price="50.00" data-product-image="/products/hoodie.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/sweatshirt.png" alt="Product 7">
+                    <h2>Sweatshirt</h2>
+                    <p>Price: $45.00 <del>$55.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A casual sweatshirt perfect for layering in cooler weather.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="7" data-product-name="Sweatshirt" data-product-price="45.00" data-product-image="/products/sweatshirt.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/jacket.jpg" alt="Product 8">
+                    <h2>Jacket</h2>
+                    <p>Price: $60.00 <del>$65.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A stylish jacket designed to keep you warm and fashionable.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="8" data-product-name="Jacket" data-product-price="60.00" data-product-image="/products/jacket.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/blazzer.png" alt="Product 9">
+                    <h2>Blazer</h2>
+                    <p>Price: $70.00 <del>$80.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A sleek blazer that adds a touch of elegance to any outfit.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="9" data-product-name="Blazer" data-product-price="70.00" data-product-image="/products/blazzer.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/shorts.png" alt="Product 10">
+                    <h2>Shorts</h2>
+                    <p>Price: $20.00 <del>$35.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Comfortable and breathable shorts for casual wear.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="10" data-product-name="Shorts" data-product-price="20.00" data-product-image="/products/shorts.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/skirt.jpg" alt="Product 11">
+                    <h2>Skirt</h2>
+                    <p>Price: $25.00 <del>$35.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A stylish skirt perfect for both casual and formal occasions.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="11" data-product-name="Skirt" data-product-price="25.00" data-product-image="/products/skirt.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/saree.jpg" alt="Product 12">
+                    <h2>Saree</h2>
+                    <p>Price: $55.00 <del>$65.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A beautiful dress designed for elegance and comfort.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="12" data-product-name="Saree" data-product-price="55.00" data-product-image="/products/saree.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/suit.jpg" alt="Product 13">
+                    <h2>Suit</h2>
+                    <p>Price: $120.00 <del>$135.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A classic suit ideal for formal events and business meetings.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="13" data-product-name="Suit" data-product-price="120.00" data-product-image="/products/suit.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/track suit.jpg" alt="Product 14">
+                    <h2>Tracksuit</h2>
+                    <p>Price: $80.00 <del>$95.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A comfortable tracksuit perfect for workouts and casual wear.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="14" data-product-name="Tracksuit" data-product-price="80.00" data-product-image="/products/track suit.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/gym.png" alt="Product 15">
+                    <h2>Gym Outfit</h2>
+                    <p>Price: $30.00 <del>$45.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A supportive outfit designed for high-intensity workouts.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="15" data-product-name="Gym Outfit" data-product-price="30.00" data-product-image="/products/gym.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/leggings.png" alt="Product 16">
+                    <h2>Leggings</h2>
+                    <p>Price: $35.00 <del>$45.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>High-performance leggings ideal for yoga and fitness activities.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="16" data-product-name="Leggings" data-product-price="35.00" data-product-image="/products/leggings.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/yoga pant.png" alt="Product 17">
+                    <h2>Yoga Pants</h2>
+                    <p>Price: $40.00 <del>$50.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Comfortable and stretchy yoga pants for all types of exercise.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="17" data-product-name="Yoga Pants" data-product-price="40.00" data-product-image="/products/yoga pant.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/tank top.png" alt="Product 18">
+                    <h2>Tank Top</h2>
+                    <p>Price: $15.00 <del>$25.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A lightweight tank top perfect for layering or warm weather.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="18" data-product-name="Tank Top" data-product-price="15.00" data-product-image="/products/tank top.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/polo tshirt.jpg" alt="Product 19">
+                    <h2>Polo Shirt</h2>
+                    <p>Price: $25.00 <del>$35.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A classic polo shirt suitable for casual and semi-formal occasions.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="19" data-product-name="Polo Shirt" data-product-price="25.00" data-product-image="/products/polo tshirt.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/cardigan.png" alt="Product 20">
+                    <h2>Cardigan</h2>
+                    <p>Price: $40.00 <del>$55.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A soft and cozy cardigan ideal for layering.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="20" data-product-name="Cardigan" data-product-price="40.00" data-product-image="/products/cardigan.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/swaeter.jpg" alt="Product 21">
+                    <h2>Sweater</h2>
+                    <p>Price: $45.00 <del>$55.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A warm and stylish sweater for cooler days.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="21" data-product-name="Sweater" data-product-price="45.00" data-product-image="/products/swaeter.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="products/trench coat.png" alt="Product 22">
+                    <h2>Trench Coat</h2>
+                    <p>Price: $100.00 <del>$115.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A classic trench coat perfect for rainy and windy days.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="22" data-product-name="Trench Coat" data-product-price="100.00" data-product-image="products/trench coat.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/raincoat.jpg" alt="Product 23">
+                    <h2>Raincoat</h2>
+                    <p>$Price: $70.00 <del>$85.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A waterproof raincoat designed to keep you dry in wet weather.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="23" data-product-name="Raincoat" data-product-price="70.00" data-product-image="/products/raincoat.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/overcoat.png" alt="Product 24">
+                    <h2>Overcoat</h2>
+                    <p>Price: $110.00 <del>$125.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A stylish overcoat perfect for winter wear.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="24" data-product-name="Overcoat" data-product-price="110.00" data-product-image="/products/overcoat.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/denim jacket.png" alt="Product 25">
+                    <h2>Denim Jacket</h2>
+                    <p>Price: $60.00 <del>$75.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A classic denim jacket with a modern fit.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="25" data-product-name="Denim Jacket" data-product-price="60.00" data-product-image="/products/denim jacket.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+                <div class="product">
+                    <img src="/products/leather jacket.png" alt="Product 26">
+                    <h2>Leather Jacket</h2>
+                    <p>Price: $150.00 <del>$165.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A sleek leather jacket that adds edge to any outfit.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="26" data-product-name="Leather Jacket" data-product-price="150.00" data-product-image="/products/leather jacket.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/bomber jacket.png" alt="Product 27">
+                    <h2>Bomber Jacket</h2>
+                    <p>Price: $80.00 <del>$95.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A trendy bomber jacket with a comfortable fit.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="27" data-product-name="Bomber Jacket" data-product-price="80.00" data-product-image="/products/bomber jacket.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/puffer jacket.png" alt="Product 28">
+                    <h2>Puffer Jacket</h2>
+                    <p>Price: $90.00 <del>$105.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A warm puffer jacket ideal for cold weather.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="28" data-product-name="Puffer Jacket" data-product-price="90.00" data-product-image="/products/puffer jacket.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/parka.png" alt="Product 29">
+                    <h2>Parka</h2>
+                    <p>Price: $130.00 <del>$145.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A heavy-duty parka designed for extreme weather conditions.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="29" data-product-name="Parka" data-product-price="130.00" data-product-image="/products/parka.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/windbreaker.png" alt="Product 30">
+                    <h2>Windbreaker</h2>
+                    <p>Price: $50.00 <del>$65.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A lightweight windbreaker perfect for outdoor activities.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="30" data-product-name="Windbreaker" data-product-price="50.00" data-product-image="/products/windbreaker.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/flipflop.jpg" alt="Product 31">
+                    <h2>Flip Flops</h2>
+                    <p>Price: $10.00 <del>$25.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Comfortable flip flops ideal for the beach and casual wear.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="31" data-product-name="Flip Flops" data-product-price="10.00" data-product-image="/products/flipflop.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/sneakers.png" alt="Product 32">
+                    <h2>Sneakers</h2>
+                    <p>Price: $50.00 <del>$65.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Stylish and comfortable sneakers for everyday wear.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="32" data-product-name="Sneakers" data-product-price="50.00" data-product-image="/products/sneakers.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/sandals.png" alt="Product 33">
+                    <h2>Sandals</h2>
+                    <p>Price: $30.00 <del>$35.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Casual sandals perfect for warm weather.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="33" data-product-name="Sandals" data-product-price="30.00" data-product-image="/products/sandals.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/boots.png" alt="Product 34">
+                    <h2>Boots</h2>
+                    <p>Price: $80.00 <del>$95.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Durable boots ideal for winter and outdoor activities.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="34" data-product-name="Boots" data-product-price="80.00" data-product-image="products/boots.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/loafer.jpg" alt="Product 35">
+                    <h2>Loafers</h2>
+                    <p>Price: $60.00 <del>$75.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Classic loafers perfect for casual and semi-formal wear.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="35" data-product-name="Loafers" data-product-price="60.00" data-product-image="/products/loafer.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/heels.jpg" alt="Product 36">
+                    <h2>Heels</h2>
+                    <p>Price: $70.00 <del>$85.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Elegant heels designed for formal occasions.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="36" data-product-name="Heels" data-product-price="70.00" data-product-image="/products/heels.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/flats.png" alt="Product 37">
+                    <h2>Flats</h2>
+                    <p>Price: $40.00 <del>$55.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Comfortable flats suitable for everyday wear.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="37" data-product-name="Flats" data-product-price="40.00" data-product-image="/products/flats.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/slippers.png" alt="Product 38">
+                    <h2>Slippers</h2>
+                    <p>Price: $20.00 <del>$25.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>High-performance running shoes for athletes.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="38" data-product-name="Slippers" data-product-price="20.00" data-product-image="/products/slippers.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/dress shoe.png" alt="Product 39">
+                    <h2>Formal Shoes</h2>
+                    <p>Price: $90.00 <del>$100.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Stylish dress shoes perfect for formal events.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="39" data-product-name="Formal Shoes" data-product-price="90.00" data-product-image="/products/dress shoe.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/running shoe.png" alt="Product 40">
+                    <h2>Running Shoes</h2>
+                    <p>Price: $70.00 <del>$85.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>High-performance running shoes for athletes.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="40" data-product-name="Running Shoes" data-product-price="70.00" data-product-image="/products/running shoe.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/hat.jpg" alt="Product 41">
+                    <h2>Hat</h2>
+                    <p>Price: $20.00 <del>$25.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A stylish hat perfect for sunny days.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="41" data-product-name="Hat" data-product-price="20.00" data-product-image="/products/hat.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/sunglasses.png" alt="Product 42">
+                    <h2>Sunglasses</h2>
+                    <p>Price: $25.00 <del>$35.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Trendy sunglasses for protection and style.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="42" data-product-name="Sunglasses" data-product-price="25.00" data-product-image="/products/sunglasses.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/scarf.png" alt="Product 43">
+                    <h2>Scarf</h2>
+                    <p>Price: $15.00 <del>$25.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p> A warm scarf to keep you cozy in winter.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="43" data-product-name="Scarf" data-product-price="15.00" data-product-image="/products/scarf.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/gloves.jpg" alt="Product 44">
+                    <h2>Gloves</h2>
+                    <p>Price: $20.00 <del>$25.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Soft and warm gloves for cold weather.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="44" data-product-name="Gloves" data-product-price="20.00" data-product-image="/products/gloves.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/belt.jpg" alt="Product 45">
+                    <h2>Belt</h2>
+                    <p>Price: $25.00 <del>$35.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A classic belt with flexible ajustments.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="45" data-product-name="Belt" data-product-price="25.00" data-product-image="/products/belt.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/watch.jpg" alt="Product 46">
+                    <h2>Watch</h2>
+                    <p>Price: $100.00 <del>$115.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A stylish watch with a sleek design and reliable performance.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="46" data-product-name="Watch" data-product-price="100.00" data-product-image="/products/watch.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/bracelet.png" alt="Product 47">
+                    <h2>Bracelet</h2>
+                    <p>Price: $50.00 <del>$65.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p> A fashionable bracelet that adds a touch of elegance to any outfit.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="47" data-product-name="Bracelet" data-product-price="50.00" data-product-image="/products/bracelet.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/necklace.png" alt="Product 48">
+                    <h2>Necklace</h2>
+                    <p>Price: $40.00 <del>$45.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A beautiful necklace designed to complement any style.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="48" data-product-name="Necklace" data-product-price="40.00" data-product-image="/products/necklace.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/earring.jpg" alt="Product 49">
+                    <h2>Earrings</h2>
+                    <p>Price: $30.00 <del>$35.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>Elegant earrings perfect for both casual and formal occasions.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="49" data-product-name="Earrings" data-product-price="30.00" data-product-image="/products/earring.jpg"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+        
+                <div class="product">
+                    <img src="/products/ring.png" alt="Product 50">
+                    <h2>Ring</h2>
+                    <p>Price: $35.00 <del>$45.00</del></p>
+                    <details>
+                        <summary>Description</summary>
+                        <p>A stylish ring that adds a touch of sophistication to any look.</p>
+                    </details><br>
+                    <button onclick="playMusic()" class="add-to-cart" data-product-id="50" data-product-name="Ring" data-product-price="35.00" data-product-image="/products/ring.png"><i class="fa-solid fa-plus"></i> Add to Cart</button>
+                </div>
+        
+            </section>
+        </main>
+    </div>
+    <div class="footer">
+        <marquee behavior="alternate" direction="right">
+            <h3>&copy; 2024 Click Shop Online.All rights reserved.</h3>
+    </marquee>
+    <div class="social">
+        <a href="tel:9629314051" onclick="playMusic3()"><i class="fa-solid fa-phone fa-shake"></i> Call Us</a>
+        <a href="mailto:akrogith777@gamil.com" onclick="playMusic3()"><i class="fa-solid fa-envelope fa-shake"></i> Mail Us</a>
+    </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartCountElement = document.getElementById('cart-count');
+
+            let cartCount = 0;
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = button.getAttribute('data-product-id');
+                    const productName = button.getAttribute('data-product-name');
+                    const productPrice = parseFloat(button.getAttribute('data-product-price'));
+                    const productImage = button.getAttribute('data-product-image');
+
+                    cartCount++;
+                    cartCountElement.textContent = `(${cartCount})`;
+                    
+                    const cartItem = {
+                        id: productId,
+                        name: productName,
+                        price: productPrice,
+                        image: productImage
+                    };
+
+                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+                    cart.push(cartItem);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+ 

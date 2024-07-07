@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="music.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Click Shop Online</title>
+</head>
+<body>
+    <audio autoplay display="none">
+        <source src="click 4.wav" type="audio/wav">
+    </audio>
+<div class="fifth">
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo"><img src="click shop.png" alt="" height="80px" width="200px"></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="carting.html">Cart</a></li>
+        </ul>
+        <a href="carting.html" class="view-cart"><i class="fa fa-shopping-basket fa-shake" aria-hidden="true"></i><span id="cart-count">(0)</span></a>
+        <script src="menu.js"></script>
+    </nav>
+
+    <main>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div><br>
+            <div id="cart-total"></div>
+            <button><a href="confirm.html"><i class="fa-solid fa-check-double"></i>&nbsp;Proceed to Buy</a></button>
+        </section>
+    </main>
+
+</div>
+<div class="footer">
+    <marquee behavior="alternate" direction="right">
+        <h3>&copy; 2024 Click Shop Online.All rights reserved.</h3>
+</marquee>
+<div class="social">
+    <a href="tel:9629314051" onclick="playMusic3()"><i class="fa-solid fa-phone fa-shake"></i> Call Us</a>
+    <a href="mailto:akrogith777@gamil.com" onclick="playMusic3()"><i class="fa-solid fa-envelope fa-shake"></i> Mail Us</a>
+</div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cartItemsContainer = document.getElementById('cart-items');
+        const cartTotalElement = document.getElementById('cart-total');
+        const cartCountElement = document.getElementById('cart-count');
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function updateCartUI() {
+            cartItemsContainer.innerHTML = '';
+            let totalPrice = 0;
+            let cartItemsMap = new Map();
+
+            cart.forEach(item => {
+                if (cartItemsMap.has(item.id)) {
+                    cartItemsMap.get(item.id).quantity++;
+                } else {
+                    cartItemsMap.set(item.id, { ...item, quantity: 1 });
+                }
+            });
+
+            cartItemsMap.forEach(item => {
+                const cartItemElement = document.createElement('div');
+                cartItemElement.classList.add('cart-item');
+                cartItemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div>
+                        <h3>${item.name}</h3>
+                        <p>$${item.price.toFixed(2)} each</p>
+                        <p>Quantity: ${item.quantity}</p>
+                        <button id="abcd" class="remove-from-cart" data-product-id="${item.id}" onclick="playMusic2()"><i class="fa-solid fa-trash fa-bounce"></i> Remove</button>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(cartItemElement);
+
+                totalPrice += item.price * item.quantity;
+            });
+
+            cartTotalElement.textContent = `Total: $${totalPrice.toFixed(2)}`;
+            localStorage.setItem('totalPrice', totalPrice);
+
+            let totalItems = 0;
+            cartItemsMap.forEach(item => {
+                totalItems += item.quantity;
+            });
+            cartCountElement.textContent = `(${totalItems})`;
+        }
+
+        updateCartUI();
+
+        cartItemsContainer.addEventListener('click', function(event) {
+            if (event.target.classList.contains('remove-from-cart')) {
+                const productId = event.target.getAttribute('data-product-id');
+                
+                cart = cart.filter(item => item.id !== productId);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                
+                updateCartUI();
+            }
+        });
+    });
+</script>
+</body>
+</html>

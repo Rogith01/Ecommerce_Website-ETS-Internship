@@ -1,0 +1,96 @@
+<!-- Enhanced confirmation.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="music.js"></script>
+    <title>Click Shop Online</title>
+    <style>
+        *{
+            background:url(thanks.gif)center center fixed;
+            background-size:cover;
+            background-repeat: no-repeat;
+
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .confirmation-box {
+            text-align: center;
+            padding: 30px;
+            animation: fadeInUp 2s ease forwards;
+        }
+        .tick-img {
+            width: 150px;
+        }
+        .message {
+            font-size: 15px;
+            color:white;
+            margin-bottom: 20px;
+
+        }
+        .shop-more a{
+            text-decoration: none;
+            color: green;
+        }
+        .shop-more button {
+            cursor:pointer;
+            border: 2px solid white;
+            padding: 10px 15px;
+            border-radius: 10px;
+        }
+        .shop-more button:hover{
+            border:3px solid green;
+            transition: all ease-in-out 0.90s;
+        }
+        .social a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 10px;
+        }
+        .social a:hover{
+            color: green;
+            transition: all ease-in-out 0.9s;
+        }
+  @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(250px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay display="none">
+        <source src="click 5.mp3" type="audio/mp3">
+    </audio>
+    <div class="confirmation-box">
+        <img src="tick.jpg" alt="Tick Mark Image" class="tick-img">
+        <div class="message">
+            <p>Congratulations!</p>
+            <p>Your Order has been placed & deliverd in 2-3 days.</p>
+            <p>Thank You!</p>
+        </div>
+        <div class="shop-more">
+            <button><a href="products.html"><i class="fa-solid fa-shop fa-shake"></i> &nbsp;Shop More!</a></button><br>
+        </div><br>
+        <div class="social">
+        <a href="tel:9629314051" onclick="playMusic3()"><i class="fa-solid fa-phone fa-shake"></i> Call Us</a>
+        <a href="mailto:akrogith777@gamil.com" onclick="playMusic3()"><i class="fa-solid fa-envelope fa-shake"></i> Mail Us</a>
+    </div>   
+</body>
+
+
+</html>

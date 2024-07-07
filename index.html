@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="music.js"></script>
+    <title>Click Shop Online</title>
+</head>
+<body>
+
+    
+    <div class="first">
+        <div class="detail">
+        <img src="click shop.png" alt="logo" width="270px" height="100px">
+        <form action="home.html" method="get" id="loginForm">
+        <i class=" fa-solid fa-envelope fa-beat fa-fw" aria-hidden="true"></i>
+        <input type="email"  id="Email" name="Email" required placeholder=" Enter user-name or email" onclick="playMusic1()"><br><br>
+        <i class="fa-solid fa-lock fa-beat fa-fw" aria hidden="true"></i>
+        <input type="password" name="Password" id="Password" required minlength="8" placeholder="Enter password" onclick="playMusic1()"><br><br>
+        <input type="checkbox"  id="accept" name="accept" required onclick="playMusic1()">
+        <label for="accept" id="iaccept" onclick="playMusic1()">I accept terms & conditions</label><br>
+        <a href="t&c.html">For T&C - click here</a>
+        <div class="but">
+        <button type="submit" id="submit"><i class="fa-solid fa-right-to-bracket"></i> LOGIN</button>
+        <button type="reset" id="reset" onclick="playMusic2()"><i class="fa-solid fa-circle-xmark"></i> RESET</button>
+        </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
