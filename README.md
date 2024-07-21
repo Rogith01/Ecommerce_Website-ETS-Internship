@@ -25,7 +25,46 @@ The project is deployed [Click Shop Online](https://click-shop-online.netlify.ap
 
 ## Getting Started
 
-To run this project locally, you can simply open the [index.html](indext.html) file in your web browser. All dependencies are included within the project.
+To run this project locally, follow these steps:
+
+  ### Prerequisites
+
+  Make sure you have the following software instlled on your computer:
+
+  - [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
+  
+    ### Installation in Vs Code
+      
+      1. **Clone the repository**:
+         Open your terminal and run the following command to clone the repository:
+         ```sh
+         git clone https://github.com/Rogith01/Click-Shop-Online.git
+         
+      
+      2. **Navigate to the project directory:**:
+         
+         ```sh
+         cd Click-Shop-Online
+         
+      3. **Open the project in VS Code:**:
+         
+         ```sh
+         code .
+   
+### Running the Application
+Since this is a static website with no server-side components, you can use the Live Server extension in VS Code to run the application.
+
+ **1.Install the Live Server extension:**
+
+  - Open VS Code.</br>
+  - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.</br>
+  - Search for "Live Server" and install it.
+
+ **2.Run the application:**
+
+  - Open the index.html file in VS Code.</br>
+  - Right-click on the file and select "Open with Live Server".</br>
+  - Your default web browser should open and display the application.
 
 ## Deployment
 
