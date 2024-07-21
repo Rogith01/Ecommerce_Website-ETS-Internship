@@ -25,7 +25,7 @@ The project is deployed [Click Shop Online](https://click-shop-online.netlify.ap
 
 ## Getting Started
 
-To run this project locally, you can simply open the index.html file in your web browser. All dependencies are included within the project.
+To run this project locally, you can simply open the [index.html](indext.html) file in your web browser. All dependencies are included within the project.
 
 ## Deployment
 
